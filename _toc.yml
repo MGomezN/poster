@@ -26,9 +26,9 @@ parts:
           - file: study_sites/sisal_videos
   - caption: Contact
     chapters:
-    - url: https://www.fatiando.org/contact/
+    - url: https://www.researchgate.net/profile/Mariana-Gomez-Nicolas
       title: Research Gate
-    - url: https://github.com/fatiando/community/blob/main/CODE_OF_CONDUCT.md
+    - url: https://www.linkedin.com/in/mariana-gomez-ni/
       title: LinkedIn
-    - url: https://github.com/fatiando/tutorials/issues/5
+    - url: https://twitter.com/mariana_zemog
       title: Twitter
