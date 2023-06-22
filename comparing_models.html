@@ -1,0 +1,1139 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Libraries &#8212; Mariana PhD</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'comparing_models';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Content with notebooks" href="notebooks.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Study Sites</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="andros.html">Andros, Bahamas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptm.html">Puerto Morelos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sisal.html">Sisal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Libraries</a></li>
+
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Contact</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://www.fatiando.org/contact/">Research Gate</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/fatiando/community/blob/main/CODE_OF_CONDUCT.md">LinkedIn</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/fatiando/tutorials/issues/5">Twitter</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/MGomezN/poster" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/MGomezN/poster/issues/new?title=Issue%20on%20page%20%2Fcomparing_models.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/comparing_models.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Libraries</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Libraries</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#read-models">Read models</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#parejas-a-comparar">Parejas a comparar</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">12751 -12410</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-se-ve-la-resistividad-lineal-a-lo-largo-de-los-modelos-con-sin-constriccion-para-z-1-3-5">¿Cómo se ve la resistividad lineal a lo largo de los modelos con /sin constricción para z=[-1,-3,-5]?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#que-nos-dice-la-resta-y-cociente-de-los-modelos-con-y-sin-constriccion-en-todo-el-modelo-y-en-el-rectangulo-salado">¿Qué nos dice la resta y cociente de los modelos con y sin constricción, en todo el modelo y en el rectángulo salado?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizar-las-diferencias">Visualizar las diferencias</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="tex2jax_ignore mathjax_ignore section" id="libraries">
+<h1>Libraries<a class="headerlink" href="#libraries" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">copy</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.float_format&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">%.10f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">x</span><span class="p">)</span>
+
+<span class="kn">import</span> <span class="nn">sys</span> <span class="c1"># https://stackoverflow.com/questions/53049195/importing-custom-module-into-jupyter-notebook/53052990</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">)</span>
+
+<span class="kn">import</span> <span class="nn">importlib</span> <span class="c1">#https://support.enthought.com/hc/en-us/articles/204469240-Jupyter-IPython-After-editing-a-module-changes-are-not-effective-without-kernel-restart</span>
+                 <span class="c1">#https://stackoverflow.com/questions/1254370/reimport-a-module-in-python-while-interactive</span>
+
+<span class="kn">import</span> <span class="nn">analisis</span>
+<span class="c1">#%matplotlib widget</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">analisis</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;module &#39;analisis&#39; from &#39;/home/m/Documents/poster/analisis.py&#39;&gt;
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="read-models">
+<h1>Read models<a class="headerlink" href="#read-models" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">##  Constricciones en mar corregidas con valores de logaritmo (Parra)</span>
+<span class="n">model_12637</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/home/m/Documents/cluster_resultados/perl5/ptm_intel/ptm_tt/ptm_tt_4_fix/0.1/to_voxler_marcluster1.dat_12637.csv&#39;</span><span class="p">)</span>
+<span class="n">model_12638</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/home/m/Documents/cluster_resultados/perl5/ptm_intel/ptm_tt/ptm_tt_4_fix/0.5/to_voxler_marcluster1.dat_12638.csv&#39;</span><span class="p">)</span>
+<span class="n">model_12639</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/home/m/Documents/cluster_resultados/perl5/ptm_intel/ptm_tt/ptm_tt_4_fix/0.01/to_voxler_marcluster1.dat_12639.csv&#39;</span><span class="p">)</span>
+<span class="n">model_12640</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/home/m/Documents/cluster_resultados/perl5/ptm_intel/ptm_tt/ptm_tt_4_fix/0.001/to_voxler_marcluster1.dat_12640.csv&#39;</span><span class="p">)</span>
+
+<span class="c1">##  Constricciones en mar a partir de histograma sin constricción</span>
+<span class="n">model_12751</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/home/m/Documents/cluster_resultados/perl5/ptm_intel/ptm_new_sea/ptm_new_sea_0.1/to_voxler_marcluster1.dat_12751.csv&#39;</span><span class="p">)</span>
+<span class="n">model_12752</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/home/m/Documents/cluster_resultados/perl5/ptm_intel/ptm_new_sea/ptm_new_sea_0.5/to_voxler_marcluster1.dat_12752.csv&#39;</span><span class="p">)</span>
+
+<span class="c1">## Sin constricciones</span>
+<span class="n">model_12410</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/home/m/Documents/cluster_resultados/perl5/ptm_intel/ptm_tt/ptm_tt_1/output/to_voxler_marcluster1.dat_12410.csv&#39;</span><span class="p">)</span> 
+<span class="n">model_12601</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/home/m/Documents/cluster_resultados/perl5/ptm_intel/ptm_tt/ptm_tt_1_0.5/to_voxler_marcluster1.dat_12601.csv&#39;</span><span class="p">)</span>
+<span class="n">model_12641</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/home/m/Documents/cluster_resultados/perl5/ptm_intel/ptm_tt/ptm_tt_1_0.01/to_voxler_marcluster1.dat_12641.csv&#39;</span><span class="p">)</span>
+<span class="n">model_12642</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/home/m/Documents/cluster_resultados/perl5/ptm_intel/ptm_tt/ptm_tt_1_0.001/to_voxler_marcluster1.dat_12642.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="parejas-a-comparar">
+<h1>Parejas a comparar<a class="headerlink" href="#parejas-a-comparar" title="Permalink to this headline">#</a></h1>
+<div class="section" id="id1">
+<h2>12751 -12410<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<p>12751 (constriccion en mar basadas en rectangulo salado característico con b=0.1) con 12410 (sin constriccion en mar con b=0.1)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model_12751</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>easting</th>
+      <th>northing</th>
+      <th>depth</th>
+      <th>log_appres_cal</th>
+      <th>linear_appres_cal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>19800.0000000000</td>
+      <td>19800.0000000000</td>
+      <td>19800.0000000000</td>
+      <td>19800.0000000000</td>
+      <td>19800.0000000000</td>
+      <td>19800.0000000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>15510.5000000000</td>
+      <td>400.0000000000</td>
+      <td>550.0000000000</td>
+      <td>-15.5000000000</td>
+      <td>-0.1186264646</td>
+      <td>0.9713386328</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>8382.7296815829</td>
+      <td>230.8737578313</td>
+      <td>317.4981750597</td>
+      <td>12.4969818064</td>
+      <td>0.3065296555</td>
+      <td>0.6796632749</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>1059.0000000000</td>
+      <td>10.0000000000</td>
+      <td>10.0000000000</td>
+      <td>-40.0000000000</td>
+      <td>-0.7230000000</td>
+      <td>0.1892343619</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>8216.7500000000</td>
+      <td>205.0000000000</td>
+      <td>270.0000000000</td>
+      <td>-22.5000000000</td>
+      <td>-0.4850000000</td>
+      <td>0.3273406949</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>15510.5000000000</td>
+      <td>400.0000000000</td>
+      <td>550.0000000000</td>
+      <td>-12.5000000000</td>
+      <td>-0.1060000000</td>
+      <td>0.7834296428</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>22804.2500000000</td>
+      <td>595.0000000000</td>
+      <td>830.0000000000</td>
+      <td>-5.0000000000</td>
+      <td>0.1470000000</td>
+      <td>1.4028137046</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>29962.0000000000</td>
+      <td>790.0000000000</td>
+      <td>1090.0000000000</td>
+      <td>-1.0000000000</td>
+      <td>0.5780000000</td>
+      <td>3.7844258472</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model_12410</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>easting</th>
+      <th>northing</th>
+      <th>depth</th>
+      <th>log_appres_cal</th>
+      <th>linear_appres_cal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>19800.0000000000</td>
+      <td>19800.0000000000</td>
+      <td>19800.0000000000</td>
+      <td>19800.0000000000</td>
+      <td>19800.0000000000</td>
+      <td>19800.0000000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>15510.5000000000</td>
+      <td>400.0000000000</td>
+      <td>550.0000000000</td>
+      <td>-15.5000000000</td>
+      <td>-0.0876267677</td>
+      <td>0.9969847464</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>8382.7296815829</td>
+      <td>230.8737578313</td>
+      <td>317.4981750597</td>
+      <td>12.4969818064</td>
+      <td>0.2784034309</td>
+      <td>0.6280063718</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>1059.0000000000</td>
+      <td>10.0000000000</td>
+      <td>10.0000000000</td>
+      <td>-40.0000000000</td>
+      <td>-0.7460000000</td>
+      <td>0.1794733627</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>8216.7500000000</td>
+      <td>205.0000000000</td>
+      <td>270.0000000000</td>
+      <td>-22.5000000000</td>
+      <td>-0.3180000000</td>
+      <td>0.4808393484</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>15510.5000000000</td>
+      <td>400.0000000000</td>
+      <td>550.0000000000</td>
+      <td>-12.5000000000</td>
+      <td>-0.0820000000</td>
+      <td>0.8279421637</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>22804.2500000000</td>
+      <td>595.0000000000</td>
+      <td>830.0000000000</td>
+      <td>-5.0000000000</td>
+      <td>0.1440000000</td>
+      <td>1.3931568029</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>29962.0000000000</td>
+      <td>790.0000000000</td>
+      <td>1090.0000000000</td>
+      <td>-1.0000000000</td>
+      <td>0.5410000000</td>
+      <td>3.4753616144</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;#datos modelo completo= &#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">model_12751</span><span class="p">),</span> <span class="s1">&#39;#datos modelo shallow = &#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">analisis</span><span class="o">.</span><span class="n">shallow</span><span class="p">(</span><span class="n">model_12751</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>#datos modelo completo=  19800 #datos modelo shallow =  6600
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="como-se-ve-la-resistividad-lineal-a-lo-largo-de-los-modelos-con-sin-constriccion-para-z-1-3-5">
+<h3>¿Cómo se ve la resistividad lineal a lo largo de los modelos con /sin constricción para z=[-1,-3,-5]?<a class="headerlink" href="#como-se-ve-la-resistividad-lineal-a-lo-largo-de-los-modelos-con-sin-constriccion-para-z-1-3-5" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">analisis</span><span class="o">.</span><span class="n">compara</span><span class="p">(</span><span class="n">analisis</span><span class="o">.</span><span class="n">shallow</span><span class="p">(</span><span class="n">model_12751</span><span class="p">),</span><span class="s1">&#39;constricciones&#39;</span><span class="p">,</span><span class="n">analisis</span><span class="o">.</span><span class="n">shallow</span><span class="p">(</span><span class="n">model_12410</span><span class="p">),</span><span class="s1">&#39;sin constricciones&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">19800</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/42cbcbd4a0169b07914bbf2fd8515600dbf68987ea2794fa2078465eba5de13b.png" src="_images/42cbcbd4a0169b07914bbf2fd8515600dbf68987ea2794fa2078465eba5de13b.png" />
+</div>
+</div>
+<p>Si la gráfica sin constricción tiene un valor más alto de resistividad,
+significa que es un poco más “dulce” que la gráfica sin constricción
+Si hago el cociente constriccion (12751) /sin constriccion (12410) = chiquito/grande esto será menos a 1 en los puntos donde hay más desviación del agua salada
+al hacer la resta</p>
+</div>
+<div class="section" id="que-nos-dice-la-resta-y-cociente-de-los-modelos-con-y-sin-constriccion-en-todo-el-modelo-y-en-el-rectangulo-salado">
+<h3>¿Qué nos dice la resta y cociente de los modelos con y sin constricción, en todo el modelo y en el rectángulo salado?<a class="headerlink" href="#que-nos-dice-la-resta-y-cociente-de-los-modelos-con-y-sin-constriccion-en-todo-el-modelo-y-en-el-rectangulo-salado" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Comparar sin constricciones vs constricciones en mar y ojos</span>
+<span class="n">model_compared_12751_12410</span> <span class="o">=</span> <span class="n">model_12751</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="c1"># CONSTRICCION - SIN CONSTRICCION</span>
+<span class="n">model_compared_12751_12410</span><span class="p">[</span><span class="s1">&#39;diferencia&#39;</span><span class="p">]</span><span class="o">=</span> <span class="n">model_12751</span><span class="p">[</span><span class="s1">&#39;linear_appres_cal&#39;</span><span class="p">]</span><span class="o">-</span> <span class="n">model_12410</span><span class="p">[</span><span class="s1">&#39;linear_appres_cal&#39;</span><span class="p">]</span>
+<span class="c1"># CONSTRICCION / SIN CONSTRICCION</span>
+<span class="n">model_compared_12751_12410</span><span class="p">[</span><span class="s1">&#39;cociente&#39;</span><span class="p">]</span><span class="o">=</span> <span class="p">(</span><span class="n">model_12751</span><span class="p">[</span><span class="s1">&#39;linear_appres_cal&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">model_12410</span><span class="p">[</span><span class="s1">&#39;linear_appres_cal&#39;</span><span class="p">])</span>
+<span class="n">model_compared_12751_12410</span> <span class="o">=</span> <span class="n">model_compared_12751_12410</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;log_appres_cal&#39;</span><span class="p">,</span><span class="s1">&#39;linear_appres_cal&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Extraer la región característica “salada”</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rectangulo_salado</span> <span class="o">=</span> <span class="n">analisis</span><span class="o">.</span><span class="n">region_salada</span><span class="p">(</span><span class="n">model_compared_12751_12410</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="visualizar-las-diferencias">
+<h3>Visualizar las diferencias<a class="headerlink" href="#visualizar-las-diferencias" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">analisis</span><span class="o">.</span><span class="n">restas_cocientes</span><span class="p">(</span><span class="n">analisis</span><span class="o">.</span><span class="n">shallow</span><span class="p">(</span><span class="n">model_compared_12751_12410</span><span class="p">),</span><span class="n">rectangulo_salado</span><span class="p">,</span><span class="s1">&#39;shallow b=0.1&#39;</span> <span class="p">,</span><span class="s1">&#39;rectangulo salado b=0.1&#39;</span> <span class="p">,</span> <span class="s1">&#39;Modelo shallow vs rectangulo salado&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/8a05aa42cdf51aa30d5864c83e24ef22dad1e4ef996b0e00af8b66912a0d829d.png" src="_images/8a05aa42cdf51aa30d5864c83e24ef22dad1e4ef996b0e00af8b66912a0d829d.png" />
+</div>
+</div>
+<p>Interesan los valores donde la resta es negativa y/o el cociente es menor que 1. Para establecer esos límites, vemos los valores mínimos y máximos en el recuadro salado</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rectangulo_salado</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>easting</th>
+      <th>northing</th>
+      <th>depth</th>
+      <th>diferencia</th>
+      <th>cociente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>150.0000000000</td>
+      <td>150.0000000000</td>
+      <td>150.0000000000</td>
+      <td>150.0000000000</td>
+      <td>150.0000000000</td>
+      <td>150.0000000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>18028.5000000000</td>
+      <td>600.0000000000</td>
+      <td>650.0000000000</td>
+      <td>-3.0000000000</td>
+      <td>0.0413120937</td>
+      <td>1.1682669748</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>2288.8648420343</td>
+      <td>57.6380746643</td>
+      <td>86.6993571112</td>
+      <td>0.0000000000</td>
+      <td>0.0408831578</td>
+      <td>0.1699640898</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>14328.0000000000</td>
+      <td>510.0000000000</td>
+      <td>510.0000000000</td>
+      <td>-3.0000000000</td>
+      <td>-0.0493631041</td>
+      <td>0.8689604293</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>15919.2500000000</td>
+      <td>550.0000000000</td>
+      <td>570.0000000000</td>
+      <td>-3.0000000000</td>
+      <td>0.0105661936</td>
+      <td>1.0333565960</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>18028.5000000000</td>
+      <td>600.0000000000</td>
+      <td>650.0000000000</td>
+      <td>-3.0000000000</td>
+      <td>0.0415816405</td>
+      <td>1.1455129414</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>20137.7500000000</td>
+      <td>650.0000000000</td>
+      <td>730.0000000000</td>
+      <td>-3.0000000000</td>
+      <td>0.0749926176</td>
+      <td>1.2971792710</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>21729.0000000000</td>
+      <td>690.0000000000</td>
+      <td>790.0000000000</td>
+      <td>-3.0000000000</td>
+      <td>0.1255040585</td>
+      <td>1.6218100974</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Esta función filtra el dataframe para excluir los datos que pertenecen al comportamiento del rectángulo salado</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">filter_model_compared_12751_12410</span><span class="o">=</span><span class="n">analisis</span><span class="o">.</span><span class="n">filter_based_rectangulo_min_max</span><span class="p">(</span><span class="n">analisis</span><span class="o">.</span><span class="n">shallow</span><span class="p">(</span><span class="n">model_compared_12751_12410</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Volvemos a graficar los histogramas para ver si funcionó el filtro</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">analisis</span><span class="o">.</span><span class="n">restas_cocientes</span><span class="p">(</span><span class="n">analisis</span><span class="o">.</span><span class="n">shallow</span><span class="p">(</span><span class="n">model_compared_12751_12410</span><span class="p">),</span><span class="n">filter_model_compared_12751_12410</span><span class="p">,</span><span class="s1">&#39;Shallow complete&#39;</span><span class="p">,</span><span class="s1">&#39;Shallow exclude salad behavious&#39;</span><span class="p">,</span><span class="s1">&#39;Anomalías&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/966310c1438fd4c8cc00c794d42bf24287dd29a2430b64cebc6ca1e6790fc691.png" src="_images/966310c1438fd4c8cc00c794d42bf24287dd29a2430b64cebc6ca1e6790fc691.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">filter_model_compared_12751_12410</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;/home/m/Documents/cluster_resultados/perl5/ptm_intel/ptm_new_sea/anomalies_12751_12410.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;#datos modelo completo= &#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">model_12751</span><span class="p">),</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;#datos modelo shallow = &#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">analisis</span><span class="o">.</span><span class="n">shallow</span><span class="p">(</span><span class="n">model_12751</span><span class="p">)),</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;#datos modelo selecting anomalies = &#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">analisis</span><span class="o">.</span><span class="n">shallow</span><span class="p">(</span><span class="n">filter_model_compared_12751_12410</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>#datos modelo completo=  19800 
+ #datos modelo shallow =  6600 
+ #datos modelo selecting anomalies =  3596
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mf">0.3235936569</span><span class="p">,</span> <span class="mf">0.8689604293</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(0.3235936569, 0.8689604293)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">filter_model_compared_12751_12410</span><span class="p">[</span><span class="n">filter_model_compared_12751_12410</span><span class="p">[</span><span class="s1">&#39;depth&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="o">-</span><span class="mi">5</span><span class="p">])]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>easting</th>
+      <th>northing</th>
+      <th>depth</th>
+      <th>diferencia</th>
+      <th>cociente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>719.0000000000</td>
+      <td>719.0000000000</td>
+      <td>719.0000000000</td>
+      <td>719.0000000000</td>
+      <td>719.0000000000</td>
+      <td>719.0000000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>14312.9165507650</td>
+      <td>297.6773296245</td>
+      <td>508.1641168289</td>
+      <td>-5.0000000000</td>
+      <td>-0.1561766304</td>
+      <td>0.7575518391</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>9645.6045269027</td>
+      <td>234.8164136224</td>
+      <td>365.4568946270</td>
+      <td>0.0000000000</td>
+      <td>0.1062305263</td>
+      <td>0.1115462701</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>1147.0000000000</td>
+      <td>10.0000000000</td>
+      <td>10.0000000000</td>
+      <td>-5.0000000000</td>
+      <td>-0.6631999189</td>
+      <td>0.3810658234</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>4881.5000000000</td>
+      <td>110.0000000000</td>
+      <td>150.0000000000</td>
+      <td>-5.0000000000</td>
+      <td>-0.1732414575</td>
+      <td>0.7161434102</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>12764.0000000000</td>
+      <td>230.0000000000</td>
+      <td>450.0000000000</td>
+      <td>-5.0000000000</td>
+      <td>-0.1291541385</td>
+      <td>0.7744617978</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>23853.5000000000</td>
+      <td>410.0000000000</td>
+      <td>870.0000000000</td>
+      <td>-5.0000000000</td>
+      <td>-0.0920154395</td>
+      <td>0.8260379496</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>29687.0000000000</td>
+      <td>790.0000000000</td>
+      <td>1090.0000000000</td>
+      <td>-5.0000000000</td>
+      <td>0.3320290049</td>
+      <td>2.2594357702</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="notebooks.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Content with notebooks</p>
+      </div>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Libraries</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#read-models">Read models</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#parejas-a-comparar">Parejas a comparar</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">12751 -12410</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-se-ve-la-resistividad-lineal-a-lo-largo-de-los-modelos-con-sin-constriccion-para-z-1-3-5">¿Cómo se ve la resistividad lineal a lo largo de los modelos con /sin constricción para z=[-1,-3,-5]?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#que-nos-dice-la-resta-y-cociente-de-los-modelos-con-y-sin-constriccion-en-todo-el-modelo-y-en-el-rectangulo-salado">¿Qué nos dice la resta y cociente de los modelos con y sin constricción, en todo el modelo y en el rectángulo salado?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizar-las-diferencias">Visualizar las diferencias</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Mariana Gómez-Nicolás
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
