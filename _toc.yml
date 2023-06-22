@@ -3,7 +3,32 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+parts:
+  - caption: Preamble
+    chapters:
+      - file: preamble/why
+  - caption: Study Sites
+    chapters:
+      - file: study_sites/where
+      - file: study_sites/andros
+        sections:
+          - file: study_sites/hydro
+          - file: study_sites/eri
+            sections:
+              - file: study_sites/land
+              - file: study_sites/marine
+              - file: study_sites/creeks
+      - file: study_sites/ptm
+        sections:
+          - file: study_sites/ptm_comparing_models
+      - file: study_sites/sisal
+        sections:
+          - file: study_sites/sisal_videos
+  - caption: Contact
+    chapters:
+    - url: https://www.fatiando.org/contact/
+      title: Research Gate
+    - url: https://github.com/fatiando/community/blob/main/CODE_OF_CONDUCT.md
+      title: LinkedIn
+    - url: https://github.com/fatiando/tutorials/issues/5
+      title: Twitter
